@@ -12,11 +12,6 @@ related:
   - sessions/01-unboxing-teardown
 ---
 
-<!-- TODO: once research/photos/ has the three source photos, add them here
-     with Astro's image() pipeline (see src/content/people for the pattern).
-     Until then, each case study below is described in enough physical
-     detail to stand on its own. -->
-
 ## The claim
 
 Sustainability language on packaging is mostly marketing. What actually
@@ -36,6 +31,12 @@ it is required to make opening the box feel like part of buying the phone.
 Call this **brand-experience logic**: the box is doing marketing work, and
 its cost is justified as marketing spend, not as shipping spend.
 
+<!-- TODO: the primary observation set for this course only turned up
+     lululemon and OnTheList photos (see research/photos/); no Apple photo
+     has been sourced yet. Add one here once it exists — until then this
+     case study is described in enough physical detail to stand on its
+     own. -->
+
 **lululemon, Patagonia.** A pair of shoes, or a small backpack, arrives in a
 box several times the size of the thing inside. Nobody designed this box to
 look generous. A retailer that ships thousands of SKUs a day gets a real
@@ -46,6 +47,8 @@ extra air freight as the price of that standardisation. Call this
 **logistics-cost logic**: the box is sized for the warehouse's convenience,
 not the product's.
 
+![Looking down into an oversized outer shipping box, with a much smaller lululemon-branded product box sitting inside it](../../../research/photos/lululemon-oversized-box.jpg)
+
 **OnTheList (an Australian online fragrance and skincare marketplace).** The
 box has a perforated tear-strip moulded into one side, so it opens without a
 knife, and a printed "Aviation Security" dangerous-goods declaration label,
@@ -55,6 +58,10 @@ customer's experience or the warehouse's shelving. Both exist because a
 regulator or a fulfilment contract requires them. Call this
 **compliance logic**: the box is built to satisfy a rule, and the rule was
 written by someone other than the brand or the buyer.
+
+![Close-up of an OnTheList shipping box showing the printed Aviation Security and Dangerous Goods Declaration label, with a torn packing-tape edge alongside it](../../../research/photos/onthelist-dangerous-goods-label.jpg)
+
+![The inside of an OnTheList box lid, printed with a thank-you message, and a hand opening the box along its moulded perforated tear-strip](../../../research/photos/onthelist-tear-strip.jpg)
 
 ## What none of the three logics needed
 
