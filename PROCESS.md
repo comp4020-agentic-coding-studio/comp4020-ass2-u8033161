@@ -1,53 +1,74 @@
 # Process overview
 
-<!-- TEMPLATE: this file is a shape to fill in, not a form. Replace everything
-     in it with your own overview, and delete this comment — `pnpm
-     check:evidence` will remind you if it's still here. -->
-
-Written by you, for a reader: how you got from the brief to the harness and
-agentic workflow behind this submission. Markers read this file and follow its
-citations; they don't trawl the repo for evidence you didn't point at.
-
-This file is the shape; the course site's
-[assessment page](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#what-you-submit)
-is the requirement, and its
-[word counts](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#word-counts)
-cover every deliverable.
-
 ## What I built
 
-One paragraph: the thing, and the idea behind it.
+A 12-week course-website prototype for "SLOP2486: Packaging Economics for
+Online Sellers" — a fictional course built around one falsifiable claim:
+that sustainability language on packaging is largely marketing, and the
+real design drivers are shipping-cost formulas and return/liability cost.
 
 ## How I got here
 
-The account of the process: how the work actually went, and how you knew the
-result was right. Tell it in whatever order makes it clear. A weekly prototype
-needs a paragraph or two; an assignment needs more.
+I explored several course ideas before settling on packaging. A desktop
+companion app was rejected — I had built something similar before, and
+its content ran out quickly once I tried it. A course on reading product
+manuals failed differently: I never read manuals closely, I skim or have
+an AI summarize them — fighting the brief's own call for a real voice. A
+third idea, queueing design and secondhand-marketplace literacy, never got
+that far — raised and dropped the moment packaging clicked. All three are
+logged in
+[`8f6a36e`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-u8033161/commit/8f6a36e).
 
-Cite the record as you go, as links whose text is the commit hash or range and
-whose target is this repo's commit or compare URL, so a reader clicks straight
-to the evidence:
+Packaging was different because it came from things I'd actually noticed.
+Orders from lululemon and Patagonia often arrived in boxes clearly
+oversized for what was inside. A package from OnTheList, a third-party
+retailer, had a tear-strip and an aviation dangerous-goods label. Apple's
+packaging interested me for the opposite reason: inserts and accessories
+were arranged so efficiently that almost no space felt wasted — packaging
+as a designed system, not a container.
 
-- one commit: [`a1b2c3d`](https://github.com/YOUR-ORG/YOUR-REPO/commit/a1b2c3d)
-- a range:
-  [`a1b2c3d...e4f5a6b`](https://github.com/YOUR-ORG/YOUR-REPO/compare/a1b2c3d...e4f5a6b)
+My first instinct was a three-way classification — brand narrative,
+logistics cost, fulfillment efficiency — which I rejected: across 12
+weeks it would read as three categories, parallel case studies rather
+than a course that builds. I tightened it into a claim that could be
+tested and rebutted instead: sustainability language on packaging is
+mostly marketing, and what actually drives design decisions is
+shipping-cost formulas and return/liability cost — checked against ISTA
+3A, Australia Post's formula and Fibre Box Association LCA data first
+(also `8f6a36e`), then encoded as CLAUDE.md's thesis-discipline rule in
+[`5452e70`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-u8033161/commit/5452e70):
+a page that could drop into an unrelated course unedited has failed it.
 
-To pair a prompt with the commit it produced, quote the prompt (curated, not a
-full transcript) next to the citation:
+Weeks 1-5 build the tools the claim needs before testing it — three-logic
+observation, corrugated materials, ISTA 3A standards, the cubic-weight
+formula, then source critique
+([`86f1c8b`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-u8033161/commit/86f1c8b),
+[`5d764bb`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-u8033161/commit/5d764bb)) —
+picking, at Week 5, the hardest source to dismiss (a peer-reviewed,
+ISO-compliant LCA), so the lesson is "ask who published it and what they
+gain," not "distrust all data." Weeks 8 and 10
+([`493ca3d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-u8033161/commit/493ca3d),
+[`34e4b74`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-u8033161/commit/34e4b74))
+attack that cost logic instead — unboxing psychology and accessibility
+both introduce value a pure cost model can't price. A thesis only ever
+confirmed isn't being tested — that's why Week 12's defense argues, not
+recaps.
 
-> the prompt, verbatim
+I split checks by what a machine can verify: assessment weights summing to
+100 and a lecture linking a real deck are mechanical, so they're `spec/`
+tests. Whether a paragraph still connects to the throughline is a
+judgment call no test can catch, so that rule lives in CLAUDE.md as
+direction I read every draft against instead.
 
-Screenshots are welcome where one carries the point better than a sentence does.
-Commit the file to this repo and link it with a **relative** path, which is what
-makes it render on GitHub: `![alt text](docs/before.png)`. Images don't count
-towards the word count and don't replace the citation.
-
-## Before you ship
-
-`pnpm check:evidence` verifies that this comment is gone, that your citations
-resolve to real commits, that a crit week's reflection entry is in
-`reflections/`, and that your `CLAUDE.md` is there. It checks that your account
-is traceable, not that it is good: that is the marker's call.
-
-Images aren't checked: unlike a citation whose SHA doesn't resolve, a broken
-image is visible the moment this file is rendered on GitHub.
+The same commit closed a subtler gap: before it, nothing distinguished a
+real fact from a plausible invented one on the page — the exact risk when
+generating anything that sounds technical. The rule doesn't ban invented
+numbers; it requires them to be told apart. A real fact goes in `spec:`
+with a source; an invented one, used only for teaching, is banned from
+`spec:` and labeled inline. Week 4 shows both halves on one page: its
+cubic-weight formula sits in `spec:` linked to Australia Post's own page,
+while the worked example beneath it is headed "illustrative dimensions,
+not a measured parcel" and never appears in `spec:`. The rule turned "does
+this sound accurate" into "is this number in `spec:` with a source" — a
+test I could apply the same way every week, not re-judge each draft from
+scratch.
