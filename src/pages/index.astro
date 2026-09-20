@@ -5,33 +5,40 @@ import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import heroImage from "../assets/images/hero-home.avif";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
-
-// STARTER_CONTENT: replace the hero artwork and its alt text below, then
-// remove this comment.
 ---
 
 <ContentLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
   heroImage={heroImage}
-  heroImageAlt="A lecture theatre reduced to flat gold and black shapes, rows of seats sweeping past the frame, in a two-ink risograph print"
+  heroImageAlt="A row of shipping boxes on a receding line, flat gold and black shapes on warm cream, in a two-ink risograph print"
   {...siteConfig}
 >
   <ul class="course-tags" aria-label="Course tags">
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
 
-  <!-- STARTER_CONTENT: replace the authored page below, then remove this comment. -->
   <h2>What you will do</h2>
   <p>
-    Say what a student spends their time on — the making, reading, arguing or
-    measuring that fills the weeks. Name the artefact they walk out with.
+    Pull apart real packages — an oversized retail box, a compliance-labelled
+    parcel, a brand unboxing — and work out which of three design logics
+    actually produced them: brand experience, logistics cost, or compliance.
+    From week 4 you trade guesswork for numbers: Australia Post's cubic-weight
+    formula, ISTA 3A drop-test standards, and a real return-rate calculation,
+    applied to the packages you tore down in week 1. You walk out with a
+    packaging cost model you built and tested against a real product, and an
+    answer — argued from evidence, not vibes — to the course's throughline
+    claim that sustainability language on packaging is mostly marketing.
   </p>
 
   <h2>Who it is for</h2>
   <p>
-    Say who this is aimed at and what they need to already know. Be specific
-    enough that someone can rule themselves in or out without emailing you.
+    Anyone who sells things online, or wants to: the course assumes no prior
+    knowledge of packaging engineering, freight pricing, or logistics, but
+    does assume you're comfortable with basic arithmetic and reading a spec
+    sheet. If you've ever wondered why your order arrived in a box big enough
+    for a microwave, this course explains it — and asks you to decide whether
+    the explanation should change how you'd package something yourself.
   </p>
 
   <h2>Where to go next</h2>
