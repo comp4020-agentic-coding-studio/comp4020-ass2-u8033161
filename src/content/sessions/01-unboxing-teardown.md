@@ -6,7 +6,7 @@ description:
 week: 1
 date: 2027-02-22
 teachers:
-  - marisol-quaye
+  - idris-fenn
 spec:
   - you brought one real package you received in the last month, with its
     box, inserts and any labels intact

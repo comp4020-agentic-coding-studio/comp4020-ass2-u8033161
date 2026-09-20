@@ -6,7 +6,7 @@ description:
 week: 2
 date: 2027-03-01
 teachers:
-  - marisol-quaye
+  - idris-fenn
 spec:
   - you can identify the flute type of your week 1 package by counting
     flutes per foot against a ruler, not by guessing from the box's look

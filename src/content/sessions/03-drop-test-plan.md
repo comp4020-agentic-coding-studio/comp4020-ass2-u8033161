@@ -6,7 +6,7 @@ description:
 week: 3
 date: 2027-03-08
 teachers:
-  - marisol-quaye
+  - idris-fenn
 spec:
   - you have picked one specific real product (not a generic "a box") and
     written a test plan naming which ISTA 3A elements you'd actually run
