@@ -14,11 +14,19 @@
 
 Rationale: this is a consumption scenario I've genuinely experienced living in Australia, I already have primary material to work from (below), and there's enough real technical/industry material available that content doesn't need to be invented.
 
-### Primary observation material (self-photographed, 2026-09-13)
+### Primary observation material (2026-09-13)
 
-- **Apple product packaging**: a layered, progressive reveal; small accessories tucked behind a hidden panel; material and minimalist aesthetic held consistent throughout → an experience-driven design logic.
-- **lululemon / Patagonia**: small items (a backpack, shoes) shipped in noticeably oversized boxes → a logistics/channel-driven design logic (standardized box sizes reduce warehouse sorting cost, at the expense of material waste).
-- **Third-party retail platform (perfume/skincare, OnTheList Australia)**: a tear-strip cut into the box for easy opening, plus an "Aviation Security" dangerous-goods declaration label → a fulfillment-center/compliance-driven design logic.
+> Correction (2026-09-21): this section originally labeled all three cases
+> "self-photographed." That was wrong for Apple — no Apple photo was ever
+> taken or committed to this repo. lululemon's and OnTheList's photos are
+> real and were committed later, in `db627b0`. Leaving an unverified claim
+> uncorrected is exactly the fact-vs-invented gap this project's own
+> sourcing rule (CLAUDE.md, from `5452e70`) exists to catch, so it's fixed
+> here rather than left standing.
+
+- **Apple product packaging** (observed and described from memory; never photographed — see week 1's lecture, which carries the case in prose only): a layered, progressive reveal; small accessories tucked behind a hidden panel; material and minimalist aesthetic held consistent throughout → an experience-driven design logic.
+- **lululemon / Patagonia** (photographed; see `research/photos/lululemon-oversized-box.jpg`, committed in `db627b0`): small items (a backpack, shoes) shipped in noticeably oversized boxes → a logistics/channel-driven design logic (standardized box sizes reduce warehouse sorting cost, at the expense of material waste).
+- **Third-party retail platform (perfume/skincare, OnTheList Australia)** (photographed; see `research/photos/onthelist-*.jpg`, committed in `db627b0`): a tear-strip cut into the box for easy opening, plus an "Aviation Security" dangerous-goods declaration label → a fulfillment-center/compliance-driven design logic.
 
 ### Thesis iteration
 
