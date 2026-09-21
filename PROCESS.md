@@ -25,7 +25,13 @@ oversized for what was inside. A package from OnTheList, a third-party
 retailer, had a tear-strip and an aviation dangerous-goods label. Apple's
 packaging interested me for the opposite reason: inserts and accessories
 were arranged so efficiently that almost no space felt wasted — packaging
-as a designed system, not a container.
+as a designed system, not a container. Logged the same day in
+[`8f6a36e`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-u8033161/commit/8f6a36e);
+only lululemon's and OnTheList's became real photos, in
+[`db627b0`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-u8033161/commit/db627b0) —
+Apple's entry wrongly claimed one, the exact gap the sourcing rule below
+exists to catch, fixed in
+[`73eb73e`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-u8033161/commit/73eb73e).
 
 My first instinct was a three-way classification — brand narrative,
 logistics cost, fulfillment efficiency — which I rejected: across 12
