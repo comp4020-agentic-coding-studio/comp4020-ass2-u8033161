@@ -62,7 +62,7 @@ recaps.
 
 I split checks by what a machine can verify: assessment weights summing to
 100 and a lecture linking a real deck are mechanical, so they're `spec/`
-tests. Whether a paragraph still connects to the throughline is a
+tests (also `5452e70`). Whether a paragraph still connects to the throughline is a
 judgment call no test can catch, so that rule lives in CLAUDE.md as
 direction I read every draft against instead.
 
